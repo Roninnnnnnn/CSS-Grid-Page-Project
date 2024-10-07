@@ -1,3 +1,18 @@
 main {
     display: grid;
+    grid-template-columns: repeat(12, 1fr [col-start]);
+    grid-template-rows: auto;
+}
+
+.logo {
+    grid-area: logo;
+}
+nav {
+    grid-area: nav;
+}
+.call-to-action {
+    grid-area: call-to-action;
+}
+.hero-image {
+    grid-area: hero-image;
 }
