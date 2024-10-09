@@ -10,9 +10,15 @@ main {
 nav {
     grid-area: nav;
 }
-.call-to-action {
+.call-to-action1 {
     grid-area: call-to-action;
 }
-.hero-image {
+.hero-image2 {
+    grid-area: hero-image;
+}
+.call-to-action1 {
+    grid-area: call-to-action;
+}
+.hero-image2 {
     grid-area: hero-image;
 }
