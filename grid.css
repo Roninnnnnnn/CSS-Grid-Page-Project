@@ -2,8 +2,16 @@ main {
     display: grid;
     grid-template-columns: repeat(12, 1fr [col-start]);
     grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "call-to-action-1 hero-image-1"
+    "hero-image-2 call-to-action-2"
 }
 
+header {
+    grid-area: header;
+    display: grid;
+}
 .logo {
     grid-area: logo;
 }
@@ -13,10 +21,10 @@ nav {
 .call-to-action1 {
     grid-area: call-to-action;
 }
-.hero-image2 {
+.hero-image-1 {
     grid-area: hero-image;
 }
-.call-to-action1 {
+.call-to-action-2 {
     grid-area: call-to-action;
 }
 .hero-image2 {
