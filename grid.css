@@ -1,9 +1,9 @@
 main {
     display: grid;
-    grid-template-columns: repeat(12, 1fr [col-start]);
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 400px 400px;
     grid-template-areas: 
-    "header"
+    "header header"
     "call-to-action-1 hero-image-1"
     "hero-image-2 call-to-action-2"
     ;
@@ -12,27 +12,31 @@ main {
 header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 10fr 45fr 45fr [col-start];
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "logo nav tools"
     ;
     align-items: center;
 }
+
 .logo {
     grid-area: logo;
 }
-nav {
+nav.navbar {
     grid-area: nav;
 }
-.call-to-action1 {
-    grid-area: call-to-action;
+.tools {
+    grid-area: tools;
+}
+.call-to-action-1 {
+    grid-area: call-to-action-1;
 }
 .hero-image-1 {
     grid-area: hero-image;
 }
 .call-to-action-2 {
-    grid-area: call-to-action;
+    grid-area: call-to-action-2;
 }
-.hero-image2 {
+.hero-image-2 {
     grid-area: hero-image;
 }
